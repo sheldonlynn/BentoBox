@@ -17,3 +17,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 ## [0.1] - 2018-02-07
 ### Added
 * Changelog.md
+
+## [0.2] - 2018-02-08
+### Added
+* Bentoaccessory, Bentobox and Bentocategory models
+* Models implement basic interface.
