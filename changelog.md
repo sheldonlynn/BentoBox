@@ -13,6 +13,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - First Mate - Jeremy Wildsmith
 - Second Mate - Byran Brotonel
 - Third Mate - Sheldon Lynn
+- Fourth Mate - Paul Li
+
+## [0.3] - 2018-02-10
+### Added
+* View for catalog page
 
 ## [0.2] - 2018-02-08
 ### Added
