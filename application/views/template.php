@@ -15,36 +15,34 @@
 
 <body>
 
-  <div class="d-flex p-3 flex-column container">
+<div class="d-flex p-3 flex-column container">
     <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">BentoBox</h3>
-        <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="/">Home</a>
-          <a class="nav-link" href="#">Contact</a>
-        </nav>
-      </div>
+        <div class="inner">
+            <h3 class="masthead-brand">BentoBox</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="/">Home</a>
+                <a class="nav-link" href="/catalog">Catalog</a>
+            </nav>
+        </div>
     </header>
 
     <div>
-      {content}
+        {content}
     </div>
 
     <footer class="mastfoot mt-auto text-center">
-      <div class="inner">
-        <p>BentoBox made with <a href="https://getbootstrap.com/">Bootstrap</a>, by BCIT Students</a>.<br> Page rendered in <strong class="text-white">{elapsed_time}</strong> seconds. <strong class="text-white">{ci_version}<strong></p>
-      </div>
+        <div class="inner">
+            <p>BentoBox made with <a href="https://getbootstrap.com/">Bootstrap</a>, by BCIT Students</a>.<br>
+                Page rendered in <strong class="text-white">{elapsed_time}</strong> seconds. <strong class="text-white">{ci_version}<strong></p>
+        </div>
     </footer>
-  </div>
+</div>
 
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <!-- Homebrewed JS -->
-  <script src="/assets/js/default.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
