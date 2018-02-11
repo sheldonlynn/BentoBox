@@ -6,17 +6,30 @@
       <div class="row">
         <div class="col-8 acc">
           <h3>Main</h3>
+          <div id="mainItem" class="item">
+            <img id="mainPicture" src="" alt="">
+            <h4 id="mainCaption"></h4>
+          </div>
         </div>
         <div class="col-4 acc">
           <h3>Side</h3>
+          <div id="sideItem" class="item"></div>
+          <img id="sidePicture" src="" alt="">
+          <h4 id="sideCaption"></h4>
         </div>
       </div>
       <div class="row">
         <div class="col acc">
           <h3>Sushi</h3>
+          <div id="sushiItem" class="item"></div>
+          <img id="sushiPicture" src="" alt="">
+          <h4 id="sushiCaption"></h4>
         </div>
         <div class="col acc">
           <h3>Salad</h3>
+          <div id="saladItem" class="item"></div>
+          <img id="saladPicture" src="" alt="">
+          <h4 id="saladCaption"></h4>
         </div>
       </div>
     </div>
@@ -30,13 +43,13 @@
             </div>
             <div class="col">
               <div class="btn-group dropright">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button id="mainButton" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Choose a Main
                 </button>
-                <div class="dropdown-menu">
+                <div id="mainDropdown" class="dropdown-menu">
                   <button id="chickenTeriyaki" class="dropdown-item" type="button">Chicken Teriyaki</button>
                   <button id="omuRice" class="dropdown-item" type="button">Omu Rice</button>
-                  <button id="grilledMackarel" class="dropdown-item" type="button">Grilled Mackarel</button>
+                  <button id="grilledMackarel" class="dropdown-item" type="button">Grilled Mackerel</button>
                   <button id="udon" class="dropdown-item" type="button">Udon</button>
                   <button id="unagi" class="dropdown-item" type="button">Unagi</button>
                 </div>
@@ -49,13 +62,13 @@
             </div>
             <div class="col">
               <div class="btn-group dropright">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button id="sideButton" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Choose a Side
                 </button>
-                <div class="dropdown-menu">
+                <div id="sideDropdown" class="dropdown-menu">
                   <button id="yamTempura" class="dropdown-item" type="button">Yam Tempura</button>
                   <button id="agedashiTofu" class="dropdown-item" type="button">Agedashi Tofu</button>
-                  <button id="shripTempura" class="dropdown-item" type="button">Shirmp Tempura</button>
+                  <button id="shripTempura" class="dropdown-item" type="button">Shrimp Tempura</button>
                   <button id="misoSoup" class="dropdown-item" type="button">Miso Soup</button>
                 </div>
               </div>
@@ -67,13 +80,13 @@
             </div>
             <div class="col">
               <div class="btn-group dropright">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Choose a Roll
+                <button id="sushiButton" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Choose a Sushi Roll
                 </button>
-                <div class="dropdown-menu">
+                <div id="sushiDropdown" class="dropdown-menu">
                   <button id="salmonRoll" class="dropdown-item" type="button">Salmon Roll</button>
                   <button id="tunaRoll" class="dropdown-item" type="button">Tuna Roll</button>
-                  <button id="shripNigiri" class="dropdown-item" type="button">Shirmp Nigiri</button>
+                  <button id="shripNigiri" class="dropdown-item" type="button">Shrimp Nigiri</button>
                   <button id="salmonSashimi" class="dropdown-item" type="button">Salmon Sashimi</button>
                   <button id="tunaSashimi" class="dropdown-item" type="button">Tuna Sashimi</button>
                 </div>
@@ -86,10 +99,10 @@
             </div>
             <div class="col">
               <div class="btn-group dropright">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button id="saladButton" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Choose a Salad
                 </button>
-                <div class="dropdown-menu">
+                <div id="saladDropdown" class="dropdown-menu">
                   <button id="ebiSunomono" class="dropdown-item" type="button">Ebi Sunomono</button>
                   <button id="goma-ae" class="dropdown-item" type="button">Goma-ae</button>
                   <button id="potatoSalad" class="dropdown-item" type="button">Potato Salad</button>
@@ -118,31 +131,31 @@
             <tbody>
               <tr>
                 <th scope="row">Weight (g)</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
+                <td id="mainWeight">Mark</td>
+                <td id="sideWeight">Otto</td>
+                <td id="sushiWeight">@mdo</td>
+                <td id="saladWeight">@mdo</td>
               </tr>
               <tr>
                 <th scope="row">Calories</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
+                <td id="mainCalories">Jacob</td>
+                <td id="sideCalories">Thornton</td>
+                <td id="sushiCalories">@fat</td>
+                <td id="saladCalories">@mdo</td>
               </tr>
               <tr>
                 <th scope="row">Presentation</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
+                <td id="mainPresentation">Larry</td>
+                <td id="sidePresentation">the Bird</td>
+                <td id="sushiPresentation">@twitter</td>
+                <td id="saladPresentation">@mdo</td>
               </tr>
               <tr>
                 <th scope="row">Price ($)</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
+                <td id="mainPrice">Larry</td>
+                <td id="sidePrice">the Bird</td>
+                <td id="sushiPrice">@twitter</td>
+                <td id="mainPrice">@mdo</td>
               </tr>
             </tbody>
           </table>
