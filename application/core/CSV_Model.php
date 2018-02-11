@@ -7,6 +7,12 @@
  * @copyright           Copyright (c) 2010-2017, James L. Parry
  * ------------------------------------------------------------------------
  */
+
+class CSV_Entity {
+    public $id;
+    public $data = array();
+}
+
 class CSV_Model extends Memory_Model
 {
 //---------------------------------------------------------------------------
@@ -19,7 +25,7 @@ class CSV_Model extends Memory_Model
 	 * @param string $keyfield  Name of the primary key field
 	 * @param string $entity	Entity name meaningful to the persistence
 	 */
-	function __construct($origin = null, $keyfield = 'id', $entity = null)
+	function __construct($origin = null, $keyfield = 'id')
 	{
 		parent::__construct();
 
@@ -30,8 +36,8 @@ class CSV_Model extends Memory_Model
 			$this->_origin = $origin;
 
 		// remember the other constructor fields
-		$this->_keyfield = $keyfield;
-		$this->_entity = $entity;
+		$this->_keyfield = "id";
+		$this->_entity = "id";
 
 		// start with an empty collection
 		$this->_data = array(); // an array of objects
@@ -61,10 +67,12 @@ class CSV_Model extends Memory_Model
 				else
 				{
 					// build object from a row
-					$record = new $this->entity();
+					$record = new CSV_Entity();
 					for ($i = 0; $i < count($this->_fields); $i ++ )
-						$record->{$this->_fields[$i]} = $data[$i];
-					$key = $record->{$this->_keyfield};
+						$record->data[$this->_fields[$i]] = $data[$i];
+
+					$record->id = $record->data["code"];
+					$key = $record->id;
 					$this->_data[$key] = $record;
 				}
 			}
