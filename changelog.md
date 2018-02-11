@@ -19,6 +19,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 ### Added
 * View for catalog page
 
+## [0.3] - 2018-02-08
+* Implemented BentoBox read functionality in models
+* Simplified CSV_Model for use with associative arrays.
+
 ## [0.2] - 2018-02-08
 ### Added
 * Bentoaccessory, Bentobox and Bentocategory models
